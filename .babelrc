@@ -1,0 +1,39 @@
+{
+  "plugins": [
+    [ "resolver", {
+      "resolveDirs": [ "src" ]
+    }],
+    [ "transform-require-ignore", {
+      "extensions": [ ".styl" ]
+    }],
+    [ "webpack-loaders-inline-exports", {
+      "configFile": "./build/webpack-babel.config.js"
+    }],
+    [ "transform-define", {
+      "__DEV__": true,
+      "__TEST__": false,
+      "__PROD__": false,
+      "__BROWSER__": false,
+      "window": "undefined"
+    }],
+    "transform-react-pug",
+    "transform-class-properties",
+    "syntax-dynamic-import",
+    [ "transform-runtime", {
+      "helpers": true,
+      "polyfill": false,
+      "regenerator": true
+    }],
+    [ "transform-object-rest-spread", {
+      "useBuiltIns": true
+    }]
+  ],
+  "presets": [
+    "react",
+    [ "env", {
+      "targets": {
+        "node": "current"
+      }
+    }]
+  ]
+}

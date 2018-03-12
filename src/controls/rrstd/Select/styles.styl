@@ -1,0 +1,28 @@
+.select
+  &__label
+    font-size 12px
+    color rgba(0,0,0,.3)
+    display block
+    margin-bottom 8px
+  &__input
+    width 100%
+    border-radius 4px
+    border solid 1px #e2e2e2
+    background #fff
+    height 30px
+    padding 0 12px
+    outline none
+    box-sizing border-box
+    font 400 14px 'Helvetica Neue', sans-serif
+    color rgba(0,0,0,.7)
+    &:hover
+      border-color #c1c1c1
+    &:focus
+      border-color #09ce95
+  &__input:focus + &__label
+    color #09ce95
+  &._error &
+    &__input
+      border-color #e15776
+    &__label
+      color #e15776

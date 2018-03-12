@@ -1,0 +1,68 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "standard",
+    "standard-react",
+    "airbnb-base"
+  ],
+  "plugins": [
+    "babel",
+    "react",
+    "promise"
+  ],
+  "env": {
+    "browser" : true,
+    "node": true,
+    "es6": true
+  },
+  "globals": {
+    "__DEV__"      : false,
+    "__TEST__"     : false,
+    "__PROD__"     : false,
+    "__COVERAGE__" : false
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-confusing-arrow": 0,
+    "key-spacing"          : "off",
+    "jsx-quotes"           : [2, "prefer-single"],
+    "max-len"              : [2, 120, 2],
+    "no-mixed-operators": "off",
+    "object-shorthand": ["error", "always"],
+    "no-underscore-dangle": [ "error", {
+      "allowAfterThis": true
+    }],
+    "class-methods-use-this": "off",
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": "off",
+    "comma-dangle": "error",
+    "prefer-rest-params": "warn",
+    "object-curly-spacing": "off",
+    "no-use-before-define": "off",
+    "no-unused-vars": "warn",
+    "yoda": "off",
+    "template-curly-spacing": [ "error", "always" ],
+    "array-bracket-spacing": "off",
+    "computed-property-spacing": "off",
+    "no-param-reassign": "off",
+    "keyword-spacing": [ "error", {
+      "overrides": {
+        "if": { "after": false },
+        "for": { "after": false },
+        "while": { "after": false }
+      }
+    }],
+    "space-in-parens": "off",
+    "no-console": "off",
+    "no-undef": "warn",
+    "no-unused-expressions": "off",
+    "no-plusplus": [ "error", {
+      "allowForLoopAfterthoughts": true
+    }],
+    "prefer-arrow-callback": "warn"
+  }
+}

@@ -1,0 +1,65 @@
+.modal-layout
+  &._visible &
+    &__inner
+      opacity 1
+      visibility visible
+  &._without-padding &
+    &__head
+      margin-bottom 0
+    &__body
+      padding 0
+  &__inner
+    position fixed
+    top 0
+    left 0
+    z-index 9999
+    width 100vw
+    height 100vh
+    display flex
+    opacity 0
+    visibility hidden
+    transition all .3s ease
+  &__overlay
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+    background-color #fff
+    z-index 1
+  &__content
+    background #fff
+    border-radius 8px
+    border solid 1px rgba(0,0,0,.1)
+    position relative
+    margin auto
+    z-index 2
+  &__head
+    padding 20px
+    margin-bottom 20px
+    min-height 80px
+    display flex
+    justify-content space-between
+    align-items center
+    box-sizing border-box
+    position relative
+    &-left
+      max-width 346px
+  &__title
+    font-size 36px
+    font-weight 700
+    text-transform uppercase
+    color rgba(0, 0, 0, 0.1)
+  &__close
+    width 24px
+    height 24px
+    // background url('~assets/imgs/close.svg') no-repeat center
+    cursor pointer
+    position absolute
+    top 29px
+    right 20px
+    transition all .3s ease
+    // &:hover
+    //   background url('~assets/imgs/close-hover.svg') no-repeat center
+  &__body
+    padding 0 20px 20px

@@ -1,0 +1,34 @@
+.page
+  &__head
+    display flex
+    justify-content space-between
+    align-items center
+    min-height 80px
+    padding 20px 0
+    box-sizing border-box
+    margin-bottom 10px
+  &__head-left,
+  &__head-right
+    display flex
+    align-items center
+    &-items
+      display flex
+      align-items center
+  &__head-left
+    max-width 550px
+  &__head-arrow
+    width 24px
+    height 24px
+    // background-image url('~assets/imgs/arrow-back.svg')
+    background-repeat no-repeatw
+    background-position center
+    margin-right 16px
+    cursor pointer
+    transition all .3s ease
+    // &:hover
+    //   background-image url('~assets/imgs/arrow-back-hover.svg')
+  &__title
+    font-size 36px
+    font-weight 700
+    text-transform uppercase
+    color rgba(0, 0, 0, 0.1)

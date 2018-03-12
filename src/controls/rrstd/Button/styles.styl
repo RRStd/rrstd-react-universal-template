@@ -1,0 +1,44 @@
+.button
+  background-color #09ce95
+  cursor pointer
+  outline none
+  border-radius 4px
+  display flex
+  height 40px
+  border none
+  transition background-color .3s ease
+  width 100%
+  &:hover
+    background-color #03ab7a
+  &__text
+    color #fff
+    font-size 14px
+    margin auto
+    text-transform uppercase
+  &._secondary
+  &._done
+  &._fail
+  &._disabled
+    background-color rgba(0,0,0,.05)
+    &:hover
+      background-color rgba(0,0,0,.15)
+    .button
+      &__text
+        color rgba(0,0,0,.2)
+  &._danger
+    background-color #e15776
+    &:hover
+      background-color #c23757
+    .button
+      &__text
+        color #fff
+  &._disabled
+    pointer-events none
+  &._done
+    pointer-events none
+    .button
+      &__text
+        color #08b583
+  &._fail
+    pointer-events none
+    background-color #e15776
